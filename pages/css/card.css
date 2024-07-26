@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+
+}
+.page-container .page {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.page-container .page .card-container {
+  height: 350px;
+  position: relative;
+}
+.card-container .card {
+  width: 12em;
+  height: 21em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.8s ease-in-out;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  padding: 20px 5px;
+  cursor: pointer;
+  text-align: justify;
+  
+}
+h6,p{
+    background-color: rgba(0, 0, 0, 0.534);
+    padding:10px;
+    border-radius: 15px;
+}
+
+.card-container .card:first-child {
+  transform: translate(-50%, -50%) rotate(10deg);
+  background: url(https://static.scientificamerican.com/dam/m/23016e24f2e114d1/original/sa0624Adva05.jpg?w=900)
+    center;
+        
+  background-size: cover;
+
+
+}
+.card-container .card:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(5deg);
+  background: url(https://assets3.cbsnewsstatic.com/hub/i/r/2024/03/20/d639eb84-cd26-452a-be56-1bb270a60474/thumbnail/620x413/e528d86a49800181b6673c17b6da6a00/accra-ghana-february-8-2023-c-muntaka-chasant-for-fondation-carmignac.jpg?v=dac66bdad19d0be8e87f46552b582682)
+    center;
+  background-size: cover;
+}
+.card-container .card:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-5deg);
+  background: url(https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2024/03/Untitled-683-x-1024-px-18.jpg.webp)
+    center;
+  background-size: cover;
+}
+.card-container .card:last-child {
+  transform: translate(-50%, -50%) rotate(-10deg);
+  background: url(https://ichef.bbci.co.uk/news/800/cpsprodpb/5191/live/8434e5a0-dfc3-11ee-baa2-d94764534374.jpg.webp)
+    center;
+  background-size: cover;
+}
+.card-container:hover .card {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.animation {
+  background: white;
+  width: 100em;
+  display: flex;
+  transition: all 1s ease;
+}
+
+#btn {
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  display: none;
+  position: absolute;
+  bottom: 5em;
+}
+h6 {
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+}
+p {
+  font-size: 0.9em;
+  font-family: monospace;
+}
+
+h6,
+p {
+  user-select: none;
+}
+.more {
+  background: transparent;
+  border: 1px solid #fff;
+  color: white;
+  padding: 3px 0.9em;
+  border-radius: 10px;
+}
+.more:hover,
+#btn:hover {
+  background: white;
+  color: gray;
+  cursor: pointer;
+}
+ion-icon {
+  color: white;
+  font-size: 20px;
+  display: none;
+}
